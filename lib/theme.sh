@@ -15,7 +15,7 @@ time_icon()
 }
 #
 setopt PROMPT_SUBST
-export PROMPT="💻 %{$fg_bold[cyan]%}%n🌎%{$fg[yellow]%}%M%{$reset_color%}: %{$fg_bold[blue]%}%c%f ⚡ "
+export PROMPT="%{💻%2G%} %{$fg_bold[cyan]%}%n%{🌎%2G%}%{$fg[yellow]%}%M%{$reset_color%}: %{$fg_bold[blue]%}%c%f ⚡ "
 export RPROMPT='%{$fg_no_bold[red]%}$(git_branch)%K{blue}$(time_icon)%{$fg_no_bold[white]%}%*%k%f'
 #
 alias ls='ls --color'
